@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jigger | Shot</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 120vh;
+        width: 100%;
+        background: linear-gradient(goldenrod, rgb(0, 0, 0) 230px),
+          url('images/background.webp');
+        background-size: cover;
+        background-position: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 80px;
+        flex-wrap: wrap;
+      }
+
+      .nav-bar .title {
+        color: #fff;
+        font-size: 67px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      span {
+        color: goldenrod;
+      }
+
+      .menu li {
+        list-style: none;
+        display: inline-block;
+      }
+
+      .menu li a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 27px;
+        font-weight: 600;
+        margin-left: 25px;
+        transition: 0.4s ease;
+      }
+
+      .menu li a:hover {
+        color: goldenrod;
+        padding: 5px 10px;
+        border: 1px solid #fff;
+      }
+
+      .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        flex: 1;
+      }
+
+      .home {
+        max-width: 50%;
+      }
+
+      .title-1 {
+        font-size: 56px;
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .home p {
+        color: goldenrod;
+        font-size: 20px;
+        margin-top: 10px;
+      }
+
+      .home button {
+        height: 40px;
+        color: #000000;
+        background: red;
+        font-size: 18px;
+        padding: 5px 30px;
+        margin-top: 50px;
+        border: none;
+        border-radius: 5px;
+        transition: 0.4s ease;
+        cursor: pointer;
+      }
+
+      .home button:hover {
+        background: rgb(42, 241, 24);
+        border: 2px solid goldenrod;
+      }
+
+      .main-content img {
+        max-width: 45%;
+        max-height: 70%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      @media(max-width: 768px){
+        .main-content img {
+          display:none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <h1 class="title">Jigger<span>Shot</span></h1>
+        <ul class="menu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </div>
+
+      <div class="main-content">
+        <div class="home">
+          <h1 class="title-1">
+            Good <span>Drinks</span> will always <br />Find the audience
+          </h1>
+          <p>We provide a variety of unique Cocktails and Mocktails</p>
+          <button type="button"><h3>Order Now</h3></button>
+        </div>
+        <img
+          src="https://i.pinimg.com/736x/2e/b5/b0/2eb5b0b96f4fdad5d79b28902b5efa78.jpg"
+          alt="Jigger Logo"
+        />
+      </div>
+    </div>
+  </body>
+</html>
